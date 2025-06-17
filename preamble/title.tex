@@ -1,0 +1,32 @@
+% ----------- TITLE -----------
+\newcommand{\name}{Артем Никитин}
+\newcommand{\nickname}{NTheme}
+\newcommand{\location}{МФТИ, Москва, Россия}
+\newcommand{\course}{19 лет, 3 курс}
+\newcommand{\phone}{+7\,(917)\,800\,10\,37}
+\newcommand{\email}{nikitin.artem.a@gmail.com}
+\newcommand{\telegram}{https://t.me/n_theme}
+\newcommand{\github}{https://github.com/NTheme}
+\newcommand{\linkedin}{https://www.yourLinkedinProfile.com/in/}
+
+% -------- HEADING RAW --------
+%\parbox{\dimexpr\linewidth-0cm\relax}{
+%  \begin{tabularx}{\linewidth}{L r}
+%    \textbf{\Large \name} & {\logobox{faPhone}{\phone}}                        \\
+%    \location             & \href{mailto:\email}{\logobox{faEnvelope}{\email}} \\
+%    \course               & \href{\telegram}{\logobox{faTelegram}{Telegram}}   \\
+%    {}                    & \href{\github}{\logobox{faGithub}{GitHub}}         \\
+%    {}                    & \href{\linkedin}{\logobox{faLinkedin}{LinkedIn}}
+%  \end{tabularx}
+%}
+
+% ---------- HEADING ----------
+\parbox{\dimexpr\linewidth-0cm\relax}{
+  \begin{tabularx}{\linewidth}{l L r}
+    \multirow[b]{5}{*}{\includegraphics[width=0.13\linewidth]{images/logo.pdf}} & \textbf{\Large \name} & \logobox{faPhone}{\phone}                          \\
+                                                                         & \location             & \href{mailto:\email}{\logobox{faEnvelope}{\email}} \\
+                                                                         & \course               & \href{\telegram}{\logobox{faTelegram}{Telegram}}   \\
+                                                                         & {}                    & \href{\github}{\logobox{faGithub}{GitHub}}         \\
+                                                                         & {}                    & \href{\linkedin}{\logobox{faLinkedin}{LinkedIn}}
+  \end{tabularx}
+}
